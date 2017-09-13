@@ -1,1 +1,1 @@
-# ConfigServer
+# ConfigRepo
