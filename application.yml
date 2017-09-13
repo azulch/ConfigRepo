@@ -4,10 +4,12 @@ info:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://admin:Admin1!@eurekaserver-azulch-0_0_1-rc_2.cfapps.io/eureka
+      defaultZone: http://admin:Admin1!@eurekaserver-azulch.cfapps.io/eureka
+--- 
+
 spring:
   profiles: cloud
 eureka:
   instance:
-    hostname:
+    hostname: ${vcap.application.uris[0]}
     nonSecurePort: 80
