@@ -1,3 +1,13 @@
 --- 
 info: 
   description: "Training configuration repo"
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://admin:Admin1!@eurekaserver-azulch-0_0_1-rc_2.cfapps.io/eureka
+spring:
+  profiles: cloud
+eureka:
+  instance:
+    hostname:
+    nonSecurePort: 80
